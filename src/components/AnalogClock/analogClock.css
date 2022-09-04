@@ -1,0 +1,172 @@
+.clock__circle {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  /* box-shadow: -3px -3px 20px 0px #fff, 6px 6px 16px #c5c5c5,
+    inset 6px 6px 16px #c5c5c5, inset -6px -6px 16px #fff; */
+  background-color: #000000;
+  border-radius: 50%;
+  border: 7px solid burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.clock__twelve,
+.clock__three,
+.clock__six,
+.clock__nine {
+  position: absolute;
+  width: 1.5rem;
+  height: 3px;
+  background-color: rgb(62, 62, 220);
+}
+.clock__twelve,
+.clock__six {
+  transform: translateX(-50%) rotate(90deg);
+}
+.clock__one {
+  color: #fff;
+  font-size: 20px;
+  top: 24px;
+  position: absolute;
+  right: 76px;
+}
+.clock__two {
+  color: #fff;
+  font-size: 20px;
+  top: 68px;
+  position: absolute;
+  right: 31px;
+}
+.clock__four {
+  color: #fff;
+  font-size: 20px;
+  top: 164px;
+  position: absolute;
+  right: 31px;
+}
+.clock__five {
+  color: #fff;
+  font-size: 20px;
+  top: 209px;
+  position: absolute;
+  right: 72px;
+}
+.clock__seven {
+  color: #fff;
+  font-size: 20px;
+  top: 164px;
+  position: absolute;
+  left: 31px;
+}
+.clock__eight {
+  color: #fff;
+  font-size: 20px;
+  top: 209px;
+  position: absolute;
+  left: 72px;
+}
+.clock__ten {
+  color: #fff;
+  font-size: 20px;
+  top: 68px;
+  position: absolute;
+  left: 31px;
+}
+.clock__eleven {
+  color: #fff;
+  font-size: 20px;
+  top: 24px;
+  position: absolute;
+  left: 76px;
+}
+.clock__twelve {
+  top: 1.25rem;
+  left: 50%;
+}
+
+.clock__three {
+  top: 50%;
+  right: 0.75rem;
+}
+
+.clock__six {
+  bottom: 1.25rem;
+  left: 50%;
+}
+
+.clock__nine {
+  left: 0.75rem;
+  top: 50%;
+}
+.clock__rounder {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: rgb(62, 62, 220);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  z-index: 1;
+}
+
+.clock__hours,
+.clock__minutes,
+.clock__seconds {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.clock__hours {
+  width: 105px;
+  height: 140px;
+}
+
+.clock__hours::before {
+  content: '';
+  position: absolute;
+  background-color: #4f4f64;
+  width: 0.25rem;
+  height: 5.5rem;
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+
+.clock__minutes {
+  width: 136px;
+  height: 186px;
+}
+
+.clock__minutes::before {
+  content: '';
+  position: absolute;
+  background-color: #4f4f64;
+  width: 0.25rem;
+  height: 6.5rem;
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+
+.clock__seconds {
+  width: 130px;
+  height: 200px;
+}
+
+.clock__seconds::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(62, 62, 220);
+  width: 0.125rem;
+  height: 7.5rem;
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+.clock__handler {
+  background-color: orange;
+  height: 30px;
+  width: 5px;
+  z-index: 1;
+  border-radius: 10px;
+  position: relative;
+  top: 115px;
+}

@@ -1,0 +1,31 @@
+.clock__text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock__text aside {
+  display: flex;
+  justify-content: center;
+}
+.clock__text .clock__text-hour,
+.clock__text .clock__text-minute {
+  font-size: 56px;
+  font-weight: 500;
+  color: #12123b;
+}
+.clock__text-ampm {
+  font-weight: 400;
+  color: #12123b;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.clock__date {
+  display: flex;
+  justify-content: center;
+  color: #4f4f64;
+  font-size: 14px;
+}
+.clock__date .clock__date-month {
+  padding: 0px 5px;
+}
